@@ -11,7 +11,7 @@ app.get("/", function(req, res){
     res.sendFile(__dirname + "/signup.html");
 });
 
-app.post("/", function(req, res){
+app.post("/sign", function(req, res){
     const firstName = req.body.fName;
     const lastName = req.body.lName;
     const email = req.body.email;
